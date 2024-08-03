@@ -86,6 +86,10 @@ const Index = () => {
     };
   }, []);
 
+  const handleClick = () => {
+    window.open('https://drive.google.com/drive/folders/15hvzq6b-kQKN8AnYp7rZMaVjw6viyg5k?usp=drive_link', '_blank');
+  };
+
   return (
     <>
       <header
@@ -113,8 +117,8 @@ const Index = () => {
                 className="text-gray-400 cursor-pointer hover:text-gray-100 mb-0"
               />
             </a>
-
           </div>
+        
           <div className="mb-8 mt-8 md:mb-20 md:mr-[5rem]" data-aos="fade-right">
             <h1 className="text-[24px] font-bold font-pins text-white md:text-6xl">
               I'm a
@@ -131,6 +135,12 @@ const Index = () => {
               dan ui/ux developer selama 3 tahun saya bersekolah di SMKN 1
               Ciomas, saya tinggal di Bogor Jawa Barat.
             </p>
+            <button
+            onClick={handleClick}
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5"
+          >
+            Lihat CV
+          </button>
           </div>
           <img
             src={me}
